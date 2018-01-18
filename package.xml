@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>smoothing_path</name>
+  <name>smooth-trajectory</name>
   <version>0.0.0</version>
-  <description>The smoothing_path package</description>
+  <description>The smooth-trajectory smoothing_path package</description>
 
   <maintainer email="kderek@mit.edu">Kenny Derek</maintainer>
 
