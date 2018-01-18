@@ -38,7 +38,6 @@ You will need to add `my_frame` into the Fixed Frame box of the rviz window. Add
 Example of final Rviz image with 5% error and SMOOTHNESS (in path_smoother.cpp) set to 3. Notice the '/my_frame' in Fixed Frame and the ADD button in the bottom left. The blue path is the original trajectory with error, the green path is the new smoothed trajectory.
 ![alt text](https://github.com/kennyderek/smooth_trajectory/blob/master/Screen%20Shot%202018-01-18%20at%203.33.02%20PM.png)
 
-{nbsp} +
 
 Set to 20% error and SMOOTHNESS still at 3.
 ![alt text](https://github.com/kennyderek/smooth_trajectory/blob/master/Screen%20Shot%202018-01-18%20at%203.32.01%20PM.png)
