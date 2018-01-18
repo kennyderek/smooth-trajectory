@@ -35,7 +35,7 @@ Note: if you encounter the error `[rospack] Error: package 'smooth_trajectory' n
 You will need to add `my_frame` into the Fixed Frame box of the rviz window. Additionally, find the 'ADD' button in the bottom left of the window and select the 'Marker' option. Wait a few seconds for the first path to be displayed
 
 #### Final results:
-![Example of final Rviz image with 5% error and SMOOTHNESS (in path_smoother.cpp) set to 3. Notice the '/my_frame' in Fixed Frame and the ADD button in the bottom left.] (https://github.com/kennyderek/smooth_trajectory/blob/master/Screen%20Shot%202018-01-18%20at%203.33.02%20PM.png)
-![Set to 20% error and SMOOTHNESS still at 3] (https://github.com/kennyderek/smooth_trajectory/blob/master/Screen%20Shot%202018-01-18%20at%203.32.01%20PM.png)
+![alt text] (https://github.com/kennyderek/smooth_trajectory/blob/master/Screen%20Shot%202018-01-18%20at%203.33.02%20PM.png "Example of final Rviz image with 5% error and SMOOTHNESS (in path_smoother.cpp) set to 3. Notice the '/my_frame' in Fixed Frame and the ADD button in the bottom left.")
+![alt text] (https://github.com/kennyderek/smooth_trajectory/blob/master/Screen%20Shot%202018-01-18%20at%203.32.01%20PM.png "Set to 20% error and SMOOTHNESS still at 3")
 
 
