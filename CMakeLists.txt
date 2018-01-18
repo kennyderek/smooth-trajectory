@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(smooth-trajectory)
+project(smooth_trajectory)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -105,7 +105,7 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES smooth-trajectory
+#  LIBRARIES smooth_trajectory
 CATKIN_DEPENDS roscpp std_msgs visualization_msgs message_runtime
 #  DEPENDS system_lib
 )
@@ -121,7 +121,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/smooth-trajectory.cpp
+#   src/${PROJECT_NAME}/smooth_trajectory.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -132,7 +132,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/smooth-trajectory_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/smooth_trajectory_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -189,7 +189,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_smooth-trajectory.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_smooth_trajectory.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
@@ -200,8 +200,8 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_executable(path_planner src/path_planner.cpp)
 target_link_libraries(path_planner ${catkin_LIBRARIES})
-add_dependencies(path_planner smooth-trajectory_generate_messages_cpp)
+add_dependencies(path_planner smooth_trajectory_generate_messages_cpp)
 
 add_executable(path_smoother src/path_smoother.cpp)
 target_link_libraries(path_smoother ${catkin_LIBRARIES})
-add_dependencies(path_smoother smooth-trajectory_generate_messages_cpp)
+add_dependencies(path_smoother smooth_trajectory_generate_messages_cpp)
